@@ -27,3 +27,5 @@ spec:
             readOnly: true
             volumeAttributes:
               secretProviderClass: "azure-kv"
+            nodePublishSecretRef:
+              name: secrets-store-creds
