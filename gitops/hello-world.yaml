@@ -20,8 +20,8 @@ spec:
             - name: HELLO_WORLD_SECRET
               valueFrom:
                 secretKeyRef:
-                  name: hello-world-secret
-                  key: HelloWorldSecret
+                  name: aks-test-key
+                  key: aks-test-key
           volumeMounts:
             - name: secrets-store-inline
               mountPath: "/mnt/secrets"
