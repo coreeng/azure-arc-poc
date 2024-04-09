@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vault-app
+  name: hello-world
   namespace: sample-app
 spec:
   replicas: 1
@@ -31,3 +31,34 @@ spec:
               secretProviderClass: "azure-kv"
             nodePublishSecretRef:
               name: secrets-store-creds
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+  namespace: sample-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: hello-world
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-world-ingress
+  namespace: sample-app
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-world-service
+                port:
+                  number: 80
