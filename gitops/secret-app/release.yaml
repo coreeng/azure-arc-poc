@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vault-app
-  namespace: default
+  namespace: sample-app
 spec:
   replicas: 1
   selector:

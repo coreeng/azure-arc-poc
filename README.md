@@ -13,16 +13,20 @@ nodes:
 
 # Create GitOps with Azure Arc
 ```shell
+CLUSTER_NAME="aks-demo001"
+RESOURCE_GROUP="aks-demo001"
 az k8s-configuration flux create \
   --name nginx-app-gitops-demo \
-  --cluster-name aks-demo001 \
-  --resource-group aks-demo001 \
+  --cluster-name ${CLUSTER_NAME} \
+  --resource-group ${RESOURCE_GROUP} \
   --scope cluster \
-  --namespace default \
+  --namespace cluster-config \
   --kind git \
   --cluster-type connectedClusters \
   --url https://github.com/soumentrivedi/azure-arc-poc \
-  --branch main
+  --branch main \
+  --kustomization name=infra path=./gitops/infra prune=true \
+  --kustomization name=apps path=./gitops/apps/staging prune=true dependsOn=\["infra"\]
 ```
 
 # Test AzureKeyVault
