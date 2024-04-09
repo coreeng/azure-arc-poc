@@ -7,19 +7,21 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vault-app
+      app: hello-world
   template:
     metadata:
       labels:
-        app: vault-app
+        app: hello-world
     spec:
       containers:
-        - name: vault-app
-          image: nginx
-          volumeMounts:
-            - name: secrets-store-inline
-              mountPath: "/mnt/secrets"
-              readOnly: true
+        - name: hello-world
+          image: soumentrivedi/hello-world:v1
+          env:
+            - name: HELLO_WORLD_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: aks-test-key
+                  key: aks-test-key
       volumes:
         - name: secrets-store-inline
           csi:
