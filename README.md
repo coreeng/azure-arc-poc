@@ -26,7 +26,8 @@ az k8s-configuration flux create \
   --url https://github.com/soumentrivedi/azure-arc-poc \
   --branch main \
   --kustomization name=infra path=./gitops/infra prune=true \
-  --kustomization name=apps path=./gitops/apps/staging prune=true dependsOn=\["infra"\]
+  --kustomization name=apps path=./gitops/apps/staging prune=true dependsOn=\["infra"\] \
+  --kustomization name=secret-app path=./gitops/secret-app prune=true dependsOn=\["infra"\]
 ```
 
 # Test AzureKeyVault
