@@ -1,2 +1,7 @@
-.iml
-.idea
+.idea/
+**/*.tfstate
+**/*.tfstate.backup
+*.iml
+**/.terraform/
+
+.
