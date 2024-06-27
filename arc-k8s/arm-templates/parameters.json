@@ -1,0 +1,83 @@
+{
+    "clusterId": {
+      "value": "/subscriptions/96f2411d-f661-4f6d-8e6c-69c3c3f2ac0f/resourceGroups/core-platform-edge-rg/providers/Microsoft.Kubernetes/ConnectedClusters/core-platform-edge-aks-d001"
+    },
+    "location": {
+      "value": "westeurope"
+    },
+    "provisionedClustersName": {
+      "value": "core-platform-edge-aks-d001"
+    },
+    "resourceTags": {
+      "value": {
+        "aks-managed-cluster-name": "aks-d001"
+      }
+    },
+    "adminGroupObjectIDs": {
+      "value": [
+        "2d5ac5ab-4acc-457e-af4d-117bd135671c"
+      ]
+    },
+    "controlPlaneIp": {
+      "value": "10.10.0.11"
+    },
+    "controlPlaneNodeCount": {
+      "value": 1
+    },
+    "controlPlaneNodesize": {
+      "value": "Standard_A4_v2"
+    },
+    "controlPlaneOsType": {
+      "value": "Linux"
+    },
+    "kubernetesVersion": {
+      "value": "v1.27.9"
+    },
+    "podCidr": {
+      "value": "10.244.0.0/16"
+    },
+    "networkPolicy": {
+      "value": "calico"
+    },
+    "vnetSubnetIds": {
+      "value": [
+        "/subscriptions/96f2411d-f661-4f6d-8e6c-69c3c3f2ac0f/resourceGroups/core-platform-edge-rg/providers/Microsoft.AzureStackHCI/logicalNetworks/hcibox-aks-lnet-vlan110"
+      ]
+    },
+    "customLocation": {
+      "value": "/subscriptions/96f2411d-f661-4f6d-8e6c-69c3c3f2ac0f/resourceGroups/core-platform-edge-rg/providers/Microsoft.ExtendedLocation/customLocations/jumpstart"
+    },
+    "workspace": {
+      "value": {
+        "id": "/subscriptions/96f2411d-f661-4f6d-8e6c-69c3c3f2ac0f/resourceGroups/core-platform-edge-rg/providers/Microsoft.OperationalInsights/workspaces/core-platform-edge-demo002-log-workspace",
+        "location": "westeurope",
+        "name": "core-platform-edge-demo002-log-workspace",
+        "properties": null,
+        "resourceGroup": {
+          "name": "core-platform-edge-rg",
+          "mode": 0
+        }
+      }
+    },
+    "omsWorkspaceId": {
+      "value": "/subscriptions/96f2411d-f661-4f6d-8e6c-69c3c3f2ac0f/resourceGroups/core-platform-edge-rg/providers/Microsoft.OperationalInsights/workspaces/core-platform-edge-demo002-log-workspace"
+    },
+    "workspaceRegion": {
+      "value": "westeurope"
+    },
+    "omsSku": {
+      "value": "standalone"
+    },
+    "isDCRNameAvailable": {
+      "value": true
+    },
+    "deployWorkspaceResource": {
+      "value": true
+    },
+    "addMonitoringExtension": {
+      "value": true
+    },
+  "keyData": {
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC4lZDOlSuPFvI5ecOv3p4fP3tykLEibT0GA974RXgMvSYyqqqmqwWOqWu+cfFbKPV5Zw2lwY3/3gzLa34+7bGw5cxImUF8LEqL2dyvfkn/7Fd+eIjjGrKoOCHrnqisr+UGc971feT7ORR0folJzMr2C2byw6WzVXPReQZol6orOQJVmbTnsIcu+yV5nSuk/BpRVx+dDZ0T/eHu3720AFPZR2bbtu0zJdkG107dczi98i6ukFRK7+NiV1z6KvtnjCELMqyrOozZPzToyv6D/ToDpoN3sry2/xaQ4p+TE4dOvyop2yY5DtocGIaxvCRPEAOeAT9yGCf/33mOmCSX85h9xKGOEQsTXKv+iaKOjdNLNcAfiY2AkJjnuaOId6A3L+aYhfz/Q/JqCLu0dOBR47QoGBPZEyAghN7HGb8F6YvCZ5NBz4+YqWeTrid9Jc94qKmOiv7bHy1qEbjwPrTnQ1AlHg0ctJD815E0jTGdlks0yF3Co0dRKpCEDfBdk3fWqYqCngs3AFOmeB213vU1y35IWGKD45yVwY3Irr9sxRwy/nVhGSwwjuqyO/2BppLaykUtymvFRQ+QECTCF6tuUGlLsfar4Bnt6adAFP9m5jzuV0V18Bg49rB0sXnyaDnJzaHBK/2bcZycxxhn1bcPRV6uoymbsNpRZUJdBrXr/pJtzQ== soumantrivedi@Soumans-MacBook-Pro-2.local"
+  }
+  }
